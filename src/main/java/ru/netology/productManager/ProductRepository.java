@@ -2,7 +2,7 @@ package ru.netology.productManager;
 import ru.netology.productManager.Product;
 
 public class ProductRepository {
-    private Product[] products = new Product[0];
+    Product[] products = new Product[0];
 
     public void save(Product product) {
         Product[] tmp = new Product[products.length + 1];
@@ -24,7 +24,7 @@ public class ProductRepository {
         }
         products = tmp;
     }
-    public Product[] getProducts() {
+    public Product[] findAll() {
         return products;
     }
 }
